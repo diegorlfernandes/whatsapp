@@ -1,27 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<link rel="stylesheet" type="text/css" href="index.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("#btn").click(function(){
-	var phone = $("#celular").val( );
-	window.location.href = "https://api.whatsapp.com/send?phone=55"+phone+"&text=sua%20mensagem";
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="index.css" rel="stylesheet">
 
-  });
-});
-</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+    crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+  
+  <script src="index.js"></script>
+  <title>whatsapp chat</title>
+
 </head>
+
 <body>
+  <div class="container">
+    <form class="form-signin">
+      <h2 class="form-signin-heading" id="form1" align="center">Informe o número de whatsapp</h2>
+      <label for="celular" class="sr-only">celular</label>
+      <input type="text" id="celular" class="form-control" placeholder="celular" required autofocus>
+      <button class="btn btn-lg btn-primary btn-block" id="btn" name="btn" type="button">Abrir chat</button>
+    </form>
 
-<div id="banner-message">
-  Celular: <input type="text" id="celular"><br>
-  <button id="btn" name="btn">Open chat</button>
-</div>
-
+  </div>
 </body>
+
 </html>
-
-
-
