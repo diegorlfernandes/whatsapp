@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="index.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn").click(function(){
+	var phone = $("#celular").val( );
+	window.location.href = "https://api.whatsapp.com/send?phone=55"+phone+"&text=sua%20mensagem";
+
+  });
+});
+</script>
+</head>
+<body>
+
+<div id="banner-message">
+  Celular: <input type="text" id="celular"><br>
+  <button id="btn" name="btn">Open chat</button>
+</div>
+
+</body>
+</html>
+
+
+
