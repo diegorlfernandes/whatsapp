@@ -11,7 +11,7 @@ $(document).ready(function($){
 
 
     $("#btn").click(function () {
-      var phone = $("#celular").val();
+      var phone = $("#celular").val().replace(/[^\d]+/g,'');
       window.location.href = "https://api.whatsapp.com/send?phone=55" + phone + "&text=sua%20mensagem";
 
     });
